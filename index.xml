@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Awesome Title</title>
-    <link>https://www.example.com/</link>
-    <description>Recent content on My Awesome Title</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-AU</language>
-    
-	<atom:link href="https://www.example.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <title>தமிழ் கட்டற்ற மென்பொருள் மாநாடு 2025</title>
+    <link>https://tossconf25.kaniyam.com/</link>
+    <description>தமிழ் கட்டற்ற மென்பொருள் (Free Software) பற்றிய 2025 ஆண்டு மாநாட்டின் செய்திகளும் புதுப்பிப்புகளும்.</description>
+    <generator>Custom RSS Generator</generator>
+    <language>ta-IN</language>
+
+    <atom:link href="https://tossconf25.kaniyam.com/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
