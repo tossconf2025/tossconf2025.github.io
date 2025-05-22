@@ -1084,3 +1084,64 @@
     padding: 0 5px;
   }
 }
+
+/* Default (desktop): image left, text right */
+.about-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  flex: 1;
+  order: 1; /* Image first */
+  padding: 15px;
+}
+
+.text-container {
+  flex: 2;
+  order: 2; /* Text second */
+  text-align: center;
+  padding: 15px;
+}
+
+/* Mobile: stack vertically with text first */
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .image-container {
+    order: 2; /* Image second on mobile */
+  }
+
+  .text-container {
+    order: 1; /* Text first on mobile */
+  }
+.menu-toggle {
+  padding: 1rem;           /* Increases clickable area */
+  cursor: pointer;
+  display: inline-block;
+}
+
+.menu-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Optional: subtle hover effect */
+}
+
+/* Optional: use a larger area but keep icon small inside */
+.menu-toggle {
+  position: relative;
+  width: 48px;   /* hitbox width */
+  height: 48px;  /* hitbox height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-toggle .menu-dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16px; /* Adjusted for better spacing */
+}
