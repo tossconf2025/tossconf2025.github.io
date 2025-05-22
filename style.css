@@ -261,7 +261,7 @@
 
     .nav-container {
       display: flex;
-      justify-content: center;
+      justify-content: left;
       align-items: center;
       padding: 0 20px;
       max-width: 1200px;
@@ -1138,10 +1138,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.menu-toggle .menu-dots {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 16px; /* Adjusted for better spacing */
 }
