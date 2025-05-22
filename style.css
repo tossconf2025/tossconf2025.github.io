@@ -1109,6 +1109,9 @@
 
 /* Mobile: stack vertically with text first */
 @media screen and (max-width: 768px) {
+    .nav-container {
+    display: none;
+  }
   .about-content {
     flex-direction: column;
   }
