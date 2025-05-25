@@ -121,112 +121,128 @@
     </section>
   
     <!-- Schedule Section -->
-<section id="schedule">
-<div class="container text-center">
-<h2>நிகழ்ச்சி நிரல்</h2>
-<div class="day-selector">
-<button class="day-btn active" onclick="showDay('day1')" data-day="day1">ஜூலை 18</button>
-<button class="day-btn" onclick="showDay('day2')" data-day="day2">ஜூலை 19</button>
-</div>
+    <section class="schedule-section">
+        <div class="container">
+            <div class="schedule-header text-center">
+                <h2>நிகழ்ச்சி நிரல்</h2>
+                
+            </div>
 
-<!-- Day 1 Timeline -->
-<div class="timeline day1 active" id="day1">
-  <div class="timeline-item">
-    <div class="timeline-circle"></div>
-    <div class="timeline-content">
-      <span class="time">9:00 - 10:00</span>
-      <h3>பதிவு & தொடக்க உரை</h3>
-      <span class="subtitle">Registration & Opening Speech</span>
-      <p>நிகழ்வின் முதல் நாள் பதிவு மற்றும் தொடக்க உரை</p>
-      <div class="host">திரு. ராஜன் குமார்</div>
+            <div class="schedule-container">
+                <div class="schedule-day">
+                    <div class="day-tabs">
+                        <button class="day-tab active" onclick="switchDay('day1', this)">July 18</button>
+                        <button class="day-tab" onclick="switchDay('day2', this)">July 19</button>
+                    </div>
+
+                    <div id="day1" class="schedule-content">
+                        <div class="schedule-item" onclick="openModal('keynote1')">
+                            <div class="schedule-time">9:00 AM</div>
+                            <div class="schedule-details">
+                                <strong>Scikit-Image பயன்படுத்தி படிமச் செயலாக்கம்</strong>
+                                <p>Image processing using Scikit-Image</p>
+                                <span class="speaker">செந்தில்குமார்</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item" onclick="openModal('workshop1')">
+                            <div class="schedule-time">10:30 AM</div>
+                            <div class="schedule-details">
+                                <strong>Inkscape மூலம் வடிவமைப்புகளை உருவாக்குதல் :ஆரம்பநிலைக்கு எளிதான வழிகாட்டி</strong>
+                                <p>Creating Designs with Inkscape: An Easy Guide for Beginners</p>
+                                <span class="speaker">பரமேஷ்வர் அருணாசலம்</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item" onclick="openModal('panel1')">
+                            <div class="schedule-time">1:00 PM</div>
+                            <div class="schedule-details">
+                                <strong>செயற்கை நுண்ணறிவுக் காலத்தில் கட்டற்ற மென்பொருட்களின் பங்கும் பயனும்</strong>
+                                <p>Role and Benefits of Free Software in the Age of Artificial Intelligence</p>
+                                <span class="speaker">மயூரன்</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item" onclick="openModal('networking1')">
+                            <div class="schedule-time">3:30 PM</div>
+                            <div class="schedule-details">
+                                <strong>Golang பற்றிய அறிமுகம்</strong>
+                                <p>Introduction to Golang</p>
+                                <span class="speaker">மோகன் ராமன்</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item" onclick="openModal('closing1')">
+                            <div class="schedule-time">5:00 PM</div>
+                            <div class="schedule-details">
+                                <strong>லினக்ஸ் Games: ஒரு அறிமுகம உரை</strong>
+                                <p>Gaming on Linux</p>
+                                <span class="speaker">கலைஅரசன்</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="day2" class="schedule-content" style="display: none;">
+                        <div class="schedule-item" onclick="openModal('keynote2')">
+                            <div class="schedule-time">9:00 AM</div>
+                            <div class="schedule-details">
+                                <strong>செயற்கை நுண்ணறிவு பற்றிய சுருக்கமான அறிமுகம்</strong>
+                                <p>Brief Introduction to Artificial Intelligence</p>
+                                <span class="speaker">ராஜவசந்தன்</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item" onclick="openModal('demo1')">
+                            <div class="schedule-time">10:30 AM</div>
+                            <div class="schedule-details">
+                                <strong>Docker: புதியவர்களுக்கான எளிய அறிமுகம் மற்றும் பயன்பாட்டு விளக்கம்</strong>
+                                <p>Docker for noobs: Beginners 101 session</p>
+                                <span class="speaker">சாகில்</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item" onclick="openModal('workshop2')">
+                            <div class="schedule-time">1:00 PM</div>
+                            <div class="schedule-details">
+                                <strong>FastAPI - ஒரு அறிமுகம உரை்</strong>
+                                <p> Getting started with FastAPI</p>
+                                <span class="speaker">அதிபன்</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item" onclick="openModal('awards')">
+                            <div class="schedule-time">3:30 PM</div>
+                            <div class="schedule-details">
+                                <strong>Scikit Learn மூலம் கற்கும் கருவிகள் உருவாக்கம் - ஒரு அறிமுகம உரை</strong>
+                                <p>ML Made Easy With Scikit Learn</p>
+                                <span class="speaker">பிரவீன் ஆர்</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-item" onclick="openModal('closing2')">
+                            <div class="schedule-time">5:00 PM</div>
+                            <div class="schedule-details">
+                                <strong>லேம்டா (lambda functions) - ஓர் அறிமுகம்</strong>
+                                <p>Introduction to Lambda Functions</p>
+                                <span class="speaker">பிரித்திவிராஜ்</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-content" id="modalContent">
+                <!-- Content will be dynamically inserted here , check script.js -->
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="timeline-item">
-    <div class="timeline-circle"></div>
-    <div class="timeline-content">
-      <span class="time">10:00 - 11:30</span>
-      <h3>கட்டற்ற மென்பொருள் அறிமுகம்</h3>
-      <span class="subtitle">Introduction to Free Software</span>
-      <p>தமிழில் கட்டற்ற மென்பொருள் பற்றிய அடிப்படை அறிமுகம்</p>
-      <div class="host">டாக்டர் பிரியா சுந்தர்</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-circle"></div>
-    <div class="timeline-content">
-      <span class="time">11:45 - 13:00</span>
-      <h3>லினக்ஸ் பயிற்சி பட்டறை</h3>
-      <span class="subtitle">Linux Training Workshop</span>
-      <p>தமிழில் லினக்ஸ் செயல்பாடுகள் பற்றிய பயிற்சி</p>
-      <div class="host">இன்ஜி. அருண் குமார்</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-circle"></div>
-    <div class="timeline-content">
-      <span class="time">14:00 - 16:00</span>
-      <h3>தமிழ் ஒருங்குறி & கட்டற்ற தட்டச்சு மென்பொருட்கள்</h3>
-      <span class="subtitle">Tamil Unicode & Free Typing Software</span>
-      <p>தமிழில் கணினி பயன்பாடுகளை உருவாக்குதல் பற்றிய அமர்வு</p>
-      <div class="host">செல்வி மீனா ராஜ்</div>
-    </div>
-  </div>
-</div>
-
-<!-- Day 2 Timeline -->
-<div class="timeline day2" id="day2">
-  <div class="timeline-item">
-    <div class="timeline-circle"></div>
-    <div class="timeline-content">
-      <span class="time">9:30 - 11:00</span>
-      <h3>கணினி நிரலாக்கம் அறிமுகம்</h3>
-      <span class="subtitle">Introduction to Computer Programming</span>
-      <p>தமிழில் கணினி நிரலாக்கம் அறிமுகம் மற்றும் பயிற்சி</p>
-      <div class="host">திரு. கார்த்திக் ராஜ்</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-circle"></div>
-    <div class="timeline-content">
-      <span class="time">11:15 - 13:00</span>
-      <h3>வலை மேம்பாடு</h3>
-      <span class="subtitle">Web Development</span>
-      <p>தமிழில் HTML, CSS மற்றும் JavaScript அறிமுகம்</p>
-      <div class="host">செல்வி லக்ஷ்மி பிரியா</div>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-circle"></div>
-    <div class="timeline-content">
-      <span class="time">14:00 - 15:30</span>
-      <h3>தரவு அறிவியல் அறிமுகம்</h3>
-
-      <span class="subtitle"> Introduction to Data Science</span>
-      <p>தமிழில் தரவு அறிவியல் மற்றும் செயற்கை நுண்ணறிவு அறிமுகம்</p>
-            <div class="host">டாக்டர் விஜய் சங்கர்</div>
-
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-circle"></div>
-    <div class="timeline-content">
-      <span class="time">15:45 - 17:00</span>
-      <h3>மூட்டுரை அமர்வு & நிறைவு</h3>
-      <span class="subtitle">Panel Discussion & Closing</span>
-      <p>கருத்துக்களை பகிர்ந்து கொள்ளும் அமர்வு மற்றும் நிறைவு விழா</p>
-      <div class="host">அனைத்து பேச்சாளர்கள்</div>
-    </div>
-  </div>
-</div>
-
-</div>
-</section>
     <!--Call for Speakers-->
     <section id="call-for-speakers" class="py-5">
   <div class="container text-center">
@@ -245,6 +261,21 @@
     </div>
   </div>
 </section>
+
+<!-- END of 10 -->>
+    <section id="end-of-10" class="py-5">
+      <div class="container text-center">
+        <h2>END OF 10</h2>
+        <div class="row justify-content-center">
+            <p class="lead mt-3">Endof10 என்பது பழைய Windows 10 கணினிகளை புதியதாக மாற்றாமல் Linux-ஐ நிறுவி தொடர்ந்து பயன்படுத்த ஊக்குவிக்கும் ஒரு உலகளாவிய முயற்சி. 2025 ஆம் ஆண்டு Windows 10க்கு மைக்ரோசாஃப்ட் ஆதரவை நிறுத்தும் நிலையில், புதிய கணினி வாங்க வேண்டிய கட்டாயத்தை தவிர்த்து, கட்டணமில்லாத மற்றும் தனியுரிமையை மதிக்கும் Linux இயக்குதளத்தை பயன்படுத்தலாம் என்பதை இந்த இயக்கம் வலியுறுத்துகிறது. இது மின்னணு குப்பைகளை குறைத்து சுற்றுச்சூழலை பாதுகாக்கும் நோக்கத்துடன் செயல்படுகிறது.
+
+              எங்கள் நிகழ்வில், இதை முன்னிட்டு பயனர்களின் கணினிகளில் நேரடியாக Linux நிறுவி கொடுப்பதன் மூலம் அவர்களை Endof10 இயக்கத்தில் பங்கேற்கச் செய்வோம்.</p>        
+            
+          
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact">
       <div class="container text-center">
