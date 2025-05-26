@@ -134,103 +134,196 @@
                         <button class="day-tab active" onclick="switchDay('day1', this)">July 18</button>
                         <button class="day-tab" onclick="switchDay('day2', this)">July 19</button>
                     </div>
+                    <div class="schedule-row">
+                    <div id="day1" class="schedule-content" >
+                        
 
-                    <div id="day1" class="schedule-content">
-                        <div class="schedule-item" onclick="openModal('keynote1')">
-                            <div class="schedule-time">9:00 AM</div>
-                            <div class="schedule-details">
-                                <strong>Scikit-Image பயன்படுத்தி படிமச் செயலாக்கம்</strong>
+                    <div class="schedule-item-group">
+                    <div class="schedule-time">9:00 AM</div>
+                    <div class="schedule-multi">
+                        <div class="schedule-details" onclick="openModal('keynote1')">
+                            <strong>Scikit-Image பயன்படுத்தி படிமச் செயலாக்கம்</strong>
                                 <p>Image processing using Scikit-Image</p>
                                 <span class="speaker">செந்தில்குமார்</span>
-                            </div>
-                        </div>
-
-                        <div class="schedule-item" onclick="openModal('workshop1')">
-                            <div class="schedule-time">10:30 AM</div>
-                            <div class="schedule-details">
-                                <strong>Inkscape மூலம் வடிவமைப்புகளை உருவாக்குதல் :ஆரம்பநிலைக்கு எளிதான வழிகாட்டி</strong>
-                                <p>Creating Designs with Inkscape: An Easy Guide for Beginners</p>
-                                <span class="speaker">பரமேஷ்வர் அருணாசலம்</span>
-                            </div>
-                        </div>
-
-                        <div class="schedule-item" onclick="openModal('panel1')">
-                            <div class="schedule-time">1:00 PM</div>
-                            <div class="schedule-details">
-                                <strong>செயற்கை நுண்ணறிவுக் காலத்தில் கட்டற்ற மென்பொருட்களின் பங்கும் பயனும்</strong>
+                          </div>
+                          <div class="schedule-details" onclick="openModal('keynote1')">
+                              <strong>Scikit-Image பயன்படுத்தி படிமச் செயலாக்கம்</strong>
+                              <p>Image processing using Scikit-Image</p>
+                              <span class="speaker">செந்தில்குமார்</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="schedule-item-group">
+                      <div class="schedule-time">10:30 AM</div>
+                      <div class="schedule-multi">
+                          <div class="schedule-details" onclick="openModal('workshop1')">
+                              <strong>Inkscape மூலம் வடிவமைப்புகளை உருவாக்குதல் :ஆரம்பநிலைக்கு எளிதான வழிகாட்டி</strong>
+                              <p>Creating Designs with Inkscape: An Easy Guide for Beginners</p>
+                              <span class="speaker">பரமேஷ்வர் அருணாசலம்</span>
+                          </div>
+                          <div class="schedule-details" onclick="openModal('workshop1')">
+                              <strong>Inkscape மூலம் வடிவமைப்புகளை உருவாக்குதல் :ஆரம்பநிலைக்கு எளிதான வழிகாட்டி</strong>
+                              <p>Creating Designs with Inkscape: An Easy Guide for Beginners</p>
+                              <span class="speaker">பரமேஷ்வர் அருணாசலம்</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="schedule-item-group">
+                      <div class="schedule-time">12.00 PM</div>
+                      <div class="schedule-multi">
+                          <div class="schedule-details" onclick="openModal('panel1')">
+                              <strong>செயற்கை நுண்ணறிவுக் காலத்தில் கட்டற்ற மென்பொருட்களின் பங்கும் பயனும்</strong>
                                 <p>Role and Benefits of Free Software in the Age of Artificial Intelligence</p>
                                 <span class="speaker">மயூரன்</span>
-                            </div>
-                        </div>
-
-                        <div class="schedule-item" onclick="openModal('networking1')">
-                            <div class="schedule-time">3:30 PM</div>
-                            <div class="schedule-details">
+                          </div>
+                          <div class="schedule-details" onclick="openModal('panel1')">
+                              <strong>செயற்கை நுண்ணறிவுக் காலத்தில் கட்டற்ற மென்பொருட்களின் பங்கும் பயனும்</strong>
+                                <p>Role and Benefits of Free Software in the Age of Artificial Intelligence</p>
+                                <span class="speaker">மயூரன்</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="schedule-item-group">
+                      <div class="schedule-time">1.00 PM</div>
+                      <div class="schedule-multi">
+                          <div class="schedule-details" onclick="openModal('networking1')">
                                 <strong>Golang பற்றிய அறிமுகம்</strong>
                                 <p>Introduction to Golang</p>
                                 <span class="speaker">மோகன் ராமன்</span>
-                            </div>
-                        </div>
-
-                        <div class="schedule-item" onclick="openModal('closing1')">
-                            <div class="schedule-time">5:00 PM</div>
-                            <div class="schedule-details">
+                          </div>
+                          <div class="schedule-details" onclick="openModal('networking1')">
+                                <strong>Golang பற்றிய அறிமுகம்</strong>
+                                <p>Introduction to Golang</p>
+                                <span class="speaker">மோகன் ராமன்</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="schedule-item-group">
+                      <div class="schedule-time">2.30 PM</div>
+                      <div class="schedule-multi">
+                          <div class="schedule-details" onclick="openModal('closing1')">
                                 <strong>லினக்ஸ் Games: ஒரு அறிமுகம உரை</strong>
                                 <p>Gaming on Linux</p>
                                 <span class="speaker">கலைஅரசன்</span>
-                            </div>
-                        </div>
-                    </div>
+                          </div>
+                          <div class="schedule-details" onclick="openModal('closing1')">
+                                <strong>லினக்ஸ் Games: ஒரு அறிமுகம உரை</strong>
+                                <p>Gaming on Linux</p>
+                                <span class="speaker">கலைஅரசன்</span>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              
+
+
 
                     <div id="day2" class="schedule-content" style="display: none;">
-                        <div class="schedule-item" onclick="openModal('keynote2')">
-                            <div class="schedule-time">9:00 AM</div>
-                            <div class="schedule-details">
+                        
+
+                    <div class="schedule-item-group">
+                    <div class="schedule-time">9:00 AM</div>
+                    <div class="schedule-multi">
+                        <div class="schedule-details" onclick="openModal('keynote2')">
+                               <strong>செயற்கை நுண்ணறிவு பற்றிய சுருக்கமான அறிமுகம்</strong>
+                                <p>Brief Introduction to Artificial Intelligence</p>
+                                <span class="speaker">ராஜவசந்தன்</span>
+                          </div>
+                          <div class="schedule-details" onclick="openModal('keynote2')">
                                 <strong>செயற்கை நுண்ணறிவு பற்றிய சுருக்கமான அறிமுகம்</strong>
                                 <p>Brief Introduction to Artificial Intelligence</p>
                                 <span class="speaker">ராஜவசந்தன்</span>
-                            </div>
-                        </div>
-
-                        <div class="schedule-item" onclick="openModal('demo1')">
-                            <div class="schedule-time">10:30 AM</div>
-                            <div class="schedule-details">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="schedule-item-group">
+                      <div class="schedule-time">10:30 AM</div>
+                      <div class="schedule-multi">
+                          <div class="schedule-details" onclick="openModal('demo1')">
                                 <strong>Docker: புதியவர்களுக்கான எளிய அறிமுகம் மற்றும் பயன்பாட்டு விளக்கம்</strong>
                                 <p>Docker for noobs: Beginners 101 session</p>
                                 <span class="speaker">சாகில்</span>
-                            </div>
-                        </div>
-
-                        <div class="schedule-item" onclick="openModal('workshop2')">
-                            <div class="schedule-time">1:00 PM</div>
-                            <div class="schedule-details">
+                          </div>
+                          <div class="schedule-details" onclick="openModal('demo1')">
+                                <strong>Docker: புதியவர்களுக்கான எளிய அறிமுகம் மற்றும் பயன்பாட்டு விளக்கம்</strong>
+                                <p>Docker for noobs: Beginners 101 session</p>
+                                <span class="speaker">சாகில்</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="schedule-item-group">
+                      <div class="schedule-time">12.00 PM</div>
+                      <div class="schedule-multi">
+                          <div class="schedule-details" onclick="openModal('workshop2')">
                                 <strong>FastAPI - ஒரு அறிமுகம உரை்</strong>
                                 <p> Getting started with FastAPI</p>
                                 <span class="speaker">அதிபன்</span>
-                            </div>
-                        </div>
-
-                        <div class="schedule-item" onclick="openModal('awards')">
-                            <div class="schedule-time">3:30 PM</div>
-                            <div class="schedule-details">
+                          </div>
+                          <div class="schedule-details" onclick="openModal('workshop2')">
+                                <strong>FastAPI - ஒரு அறிமுகம உரை்</strong>
+                                <p> Getting started with FastAPI</p>
+                                <span class="speaker">அதிபன்</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="schedule-item-group">
+                      <div class="schedule-time">1.00 PM</div>
+                      <div class="schedule-multi">
+                          <div class="schedule-details" onclick="openModal('awards')">
                                 <strong>Scikit Learn மூலம் கற்கும் கருவிகள் உருவாக்கம் - ஒரு அறிமுகம உரை</strong>
                                 <p>ML Made Easy With Scikit Learn</p>
                                 <span class="speaker">பிரவீன் ஆர்</span>
-                            </div>
-                        </div>
-
-                        <div class="schedule-item" onclick="openModal('closing2')">
-                            <div class="schedule-time">5:00 PM</div>
-                            <div class="schedule-details">
+                          </div>
+                          <div class="schedule-details" onclick="openModal('awards')">
+                                <strong>Scikit Learn மூலம் கற்கும் கருவிகள் உருவாக்கம் - ஒரு அறிமுகம உரை</strong>
+                                <p>ML Made Easy With Scikit Learn</p>
+                                <span class="speaker">பிரவீன் ஆர்</span>>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="schedule-item-group">
+                      <div class="schedule-time">2.30 PM</div>
+                      <div class="schedule-multi">
+                          <div class="schedule-details" onclick="openModal('closing2')">
                                 <strong>லேம்டா (lambda functions) - ஓர் அறிமுகம்</strong>
                                 <p>Introduction to Lambda Functions</p>
                                 <span class="speaker">பிரித்திவிராஜ்</span>
-                            </div>
-                        </div>
-                    </div>
+                          </div>
+                          <div class="schedule-details" onclick="openModal('closing2')">
+                                <strong>லேம்டா (lambda functions) - ஓர் அறிமுகம்</strong>
+                                <p>Introduction to Lambda Functions</p>
+                                <span class="speaker">பிரித்திவிராஜ்</span>
+                          </div>
+                      </div>
+                  </div>
                 </div>
+
+                            
+                        
+
+                            
+                        
+
+                      
+
+
+
+
+
+                
+
+
+
+
+
+
+
+              </div>
             </div>
         </div>
+    </div>
+            
+      
     </section>
 
     <!-- Modal -->
