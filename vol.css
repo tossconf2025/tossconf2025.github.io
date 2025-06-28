@@ -1,0 +1,170 @@
+
+        :root {
+            --primary-blue: #1e88e5;
+            --secondary-blue: #0d47a1;
+            --primary-green: #26a69a;
+            --secondary-green: #00897b;
+            --primary-yellow: #ffd54f;
+            --secondary-yellow: #ffb300;
+            --light-blue: #e8f4ff;
+            --light-green: #e0f2f1;
+            --light-yellow: #fffde7;
+            --dark-text: #333;
+            --light-text: #fff;
+            --section-padding: 80px 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Latha', 'Noto Sans Tamil', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f9f9f9;
+            color: var(--dark-text);
+            overflow-x: hidden;
+        }
+
+        .volunteers-section {
+            padding: var(--section-padding);
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-green) 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--primary-blue), var(--primary-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        .section-title p {
+            font-size: 1.2rem;
+            color: var(--dark-text);
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+.volunteers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+        .volunteer-item {
+            text-align: center;
+        }
+
+        .volunteer-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease;
+        }
+
+        .volunteer-link:hover {
+            transform: translateY(-5px);
+        }
+
+        .volunteer-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 0 auto 15px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .volunteer-avatar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--primary-blue), var(--primary-green));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .volunteer-link:hover .volunteer-avatar {
+            box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3);
+            transform: scale(1.05);
+        }
+
+        .volunteer-link:hover .volunteer-avatar::before {
+            opacity: 0.2;
+        }
+
+        .volunteer-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 0;
+        }
+
+        .volunteer-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--dark-text);
+            transition: color 0.3s ease;
+        }
+
+        .volunteer-link:hover .volunteer-name {
+            color: var(--primary-blue);
+        }
+
+        @media (max-width: 768px) {
+            .section-title h2 {
+                font-size: 2.5rem;
+            }
+            
+            .volunteers-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                gap: 20px;
+            }
+            
+            .volunteer-avatar {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .volunteers-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 15px;
+            }
+            
+            .volunteer-avatar {
+                width: 80px;
+                height: 80px;
+            }
+        }
